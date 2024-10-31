@@ -1,0 +1,21 @@
+#include <stdio.h>
+int Palindrom(num) {
+    int reversed = 0, original = num, remainder;
+    while (num != 0) {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num /= 10;
+    }
+    return original == reversed;
+}
+int main() {
+    int number;
+    printf("Ədədi daxil edin: ");
+    scanf("%d", &num);
+    if (Palindrom(num)) {
+        printf("%d palindromdur");
+    } else {
+        printf("%d palindrom deyil");
+    }
+    return 0;
+}

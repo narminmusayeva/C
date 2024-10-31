@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int number = 7;
+    int factorial = 1;
+ü
+    for (int i = 1; i <= number; i++) {
+        factorial *= i;
+    }
+    printf("factorial of %d is %d.\n", number, factorial);
+
+    return 0;
+}

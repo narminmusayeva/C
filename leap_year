@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int year;
+
+    // İstifadəçidən il dəyərini daxil etməsini istəyirik
+    printf("Bir ili daxil edin: ");
+    scanf("%d", &year);
+
+    // Leap year yoxlamaq üçün şərtlər
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        printf("%d ili artıq ildir.\n", year);
+    } else {
+        printf("%d ili artıq il deyil.\n", year);
+    }
+
+    return 0;
+}
